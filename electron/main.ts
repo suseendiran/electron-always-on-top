@@ -31,7 +31,7 @@ function createWindow() {
     );
   }
   if (process.platform === "darwin") app?.dock?.hide();
-  mainWindow.setAlwaysOnTop(true, "floating", 10);
+  mainWindow.setAlwaysOnTop(true, "pop-up-menu", 1);
   mainWindow.setVisibleOnAllWorkspaces(true);
   mainWindow.fullScreenable = false;
   mainWindow.on("closed", () => {
