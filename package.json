@@ -10,7 +10,8 @@
     "build:react": "NODE_ENV=production webpack --config webpack.react.config.js --mode production",
     "build": "npm run build:electron && npm run build:react",
     "pack": "electron-builder --dir",
-    "pack:win":"npm run build:electron && electron-builder --win --x64",
+    "pack:win": "npm run build:electron && electron-builder --win --x64",
+    "pack:mac": "npm run build:react && npm run build:electron && electron-builder --mac --x64",
     "dist": "electron-builder"
   },
   "keywords": [],

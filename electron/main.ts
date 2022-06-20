@@ -63,6 +63,6 @@ const startApp = () => {
 
 app.on("ready", startApp);
 app.on("window-all-closed", function () {
-  if (process.platform !== "darwin") app.quit();
+  app.quit();
 });
 app.allowRendererProcessReuse = true;
